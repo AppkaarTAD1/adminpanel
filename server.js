@@ -1,6 +1,6 @@
 const express = require('express');
-const AdminBro = require('admin-bro')
-const options = require('./admin.options')
+const { default:AdminBro} = require('admin-bro');
+const options = require('./admin.options');
 const buildAdminRouter = require('./admin.router')
 
 const app = express();
